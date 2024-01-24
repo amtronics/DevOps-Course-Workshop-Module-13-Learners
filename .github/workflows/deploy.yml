@@ -13,7 +13,7 @@ jobs:
         AZURE_WEBHOOK: '${{ secrets.AZURE_WEBHOOK }}'
     # DECIDE WHETHER YOU WANT A BRANCH CHECK - if so remove the other "if"
     # if: github.ref == 'refs/heads/master'
-    if: github.repository != 'amtronics/DevOps-Course-Workshop-Module-13-Learners'
+    if: github.repository != 'corndeladmin/DevOps-Course-Workshop-Module-13-Learners'
     steps:
       - name: test
         run: echo ${{ github.repository }}
