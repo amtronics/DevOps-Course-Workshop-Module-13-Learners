@@ -6,3 +6,5 @@ pyodbc>=4.0.32
 pytz>=2022.1
 apscheduler==3.9.1
 gunicorn>=21.2.0
+opencensus-ext-azure
+opencensus-ext-flask
