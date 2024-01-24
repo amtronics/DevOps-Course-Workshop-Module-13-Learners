@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         # REPLACE THIS
-        DOCKERHUB_USERNAME: corndeldevopscourse
+        DOCKERHUB_USERNAME: amtronics
         # SET THESE IN GITHUB
         DOCKERHUB_TOKEN: '${{ secrets.DOCKERHUB_TOKEN }}'
         AZURE_WEBHOOK: '${{ secrets.AZURE_WEBHOOK }}'

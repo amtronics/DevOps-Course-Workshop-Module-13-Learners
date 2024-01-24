@@ -2,7 +2,10 @@ from data.database import save_order, get_all_orders
 from products import create_product_download
 from apscheduler.schedulers.background import BackgroundScheduler
 import requests
+import logging
 
+
+logging.basicConfig(level=logging.INFO)
 
 def initialise_scheduled_jobs(app):
     scheduler = BackgroundScheduler()
@@ -34,6 +37,7 @@ def process_orders(app):
             json=payload
         )
 
+        app.logger.info("Response from endpoint: " + response.text)
         response.raise_for_status()
 
         order.set_as_processed()
